@@ -128,3 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 Datasets/Training/Sentiment140/training.1600000.processed.noemoticon.csv
+Datasets/Validation/US/hashtag_donaldtrump.csv
+Datasets/Validation/US/hashtag_joebiden.csv
