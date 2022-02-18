@@ -9,6 +9,7 @@ NUM_TWEETS = 1000
 since = str(datetime.datetime(2022, 2, 15))
 until = str(datetime.datetime(2022, 2, 17))
 
+search_list = ["aam aadmi party"]
 
 def scrape_tweets_from_query(query,fname):
     config = twint.Config()
@@ -47,5 +48,6 @@ def scrape_tweets_from_user(username,fname):
 
 
 if __name__ == "__main__":
-    #scrape_tweets_from_user("AmitShah", "tweets_amit.csv")
-    scrape_tweets_from_query("aam aadmi party", "tweets_aam_aadmi.csv")
+    for query in search_list:
+        fname = "data/" + query + "_" + str(date.today()) + ".csv"
+        scrape_tweets_from_query(query,fname)
