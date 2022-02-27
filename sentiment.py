@@ -1,4 +1,5 @@
 import pickle
+from tabnanny import verbose
 from unicodedata import name
 import pandas as pd
 from preprocess import preprocessList
@@ -29,6 +30,9 @@ def predict(vectoriser, model, text):
     df = pd.DataFrame(data, columns = ['text','sentiment'])
     df = df.replace([0,1], ["Negative","Positive"])
     return df
+
+def predict_vader():
+    pass
 
 if __name__ == '__main__':
     vectoriser, BNBmodel = load_models()

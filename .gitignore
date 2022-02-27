@@ -133,4 +133,4 @@ Datasets/Validation/US/hashtag_donaldtrump.csv
 Datasets/Validation/US/hashtag_joebiden.csv
 
 Twitter Scrape/data/*/*.csv
-Twitter Scrape/src/
+Twitter Scrape/src/.DS_Store

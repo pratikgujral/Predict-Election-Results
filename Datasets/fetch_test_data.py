@@ -16,6 +16,7 @@ for category in tqdm(categories):
         if query[-1]=="_":
             query = query[:-1]
         df = pd.read_csv(path + file)
+        # [TODO]: pre processing of parties
         if query not in query_df_map:
             query_df_map[query] = df
         else:
