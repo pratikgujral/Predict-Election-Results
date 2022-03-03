@@ -90,8 +90,11 @@ if __name__ == "__main__":
 
     df_donald = filter(df_donald)
     print("Donald Done")
+    df_donald.to_csv("Datasets/Validation/US/hashtag_donaldtrump_filtered.csv")
+    
     df_biden = filter(df_biden)
     print("Biden Done")
-
-    df_donald.to_csv("Datasets/Validation/US/hashtag_donaldtrump_filtered.csv")
     df_biden.to_csv("Datasets/Validation/US/hashtag_joebiden_filtered.csv")
+
+    
+    

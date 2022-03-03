@@ -7,7 +7,7 @@ from tqdm import tqdm
 TRANSLATE_FLAG = False
 TEMPORAL_FLAG = True
 NUM_TWEETS = 20000
-since = str(date.today() - timedelta(days=2))
+since = str(date.today() - timedelta(days=1))
 until = str(date.today())
 
 bjp_search_list = ["bjp","@BJP4India","@narendramodi","#BJPwinningUP","@AmitShah"]
