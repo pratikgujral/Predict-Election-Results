@@ -17,3 +17,5 @@ CSV files for sentiment counts in the same link as well, i.e.
 * idea2 = TRAINED MODEL 
 * idea3 = Subjectivity + VADER
 * idea4 = Subjectivity + TRAINED MODEL
+
+Results of the US election at the same link.
