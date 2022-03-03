@@ -7,7 +7,7 @@ from tqdm import tqdm
 TRANSLATE_FLAG = False
 TEMPORAL_FLAG = True
 NUM_TWEETS = 20000
-since = str(date.today() - timedelta(days=1))
+since = str(date.today() - timedelta(days=2))
 until = str(date.today())
 
 bjp_search_list = ["bjp","@BJP4India","@narendramodi","#BJPwinningUP","@AmitShah"]
@@ -52,21 +52,23 @@ def scrape_tweets_from_user(username,fname):
 
 
 if __name__ == "__main__":
-    for query in tqdm(inc_search_list):
-        fname = "data/inc/" + query + "_" + str(date.today()) + ".csv"
-        scrape_tweets_from_query(query,fname)
-    for query in tqdm(general_search_list):
-        fname = "data/general/" + query + "_" + str(date.today()) + ".csv"
-        scrape_tweets_from_query(query,fname)
-    for query in tqdm(bsp_search_list):
-        fname = "data/bsp/" + query + "_" + str(date.today()) + ".csv"
-        scrape_tweets_from_query(query,fname)
-    for query in tqdm(samajwadi_search_list):
-        fname = "data/samajwadi/" + query + "_" + str(date.today()) + ".csv"
-        scrape_tweets_from_query(query,fname)
-    for query in tqdm(bjp_search_list_2):
+
+    for query in tqdm(bjp_search_list):
+        print(query)
         fname = "data/bjp/" + query + "_" + str(date.today()) + ".csv"
         scrape_tweets_from_query(query,fname)
+    # for query in tqdm(general_search_list):
+    #     fname = "data/general/" + query + "_" + str(date.today()) + ".csv"
+    #     scrape_tweets_from_query(query,fname)
+    # for query in tqdm(bsp_search_list):
+    #     fname = "data/bsp/" + query + "_" + str(date.today()) + ".csv"
+    #     scrape_tweets_from_query(query,fname)
+    # for query in tqdm(samajwadi_search_list):
+    #     fname = "data/samajwadi/" + query + "_" + str(date.today()) + ".csv"
+    #     scrape_tweets_from_query(query,fname)
+    # for query in tqdm(bjp_search_list_2):
+    #     fname = "data/bjp/" + query + "_" + str(date.today()) + ".csv"
+    #     scrape_tweets_from_query(query,fname)
 
 
     # for query in aap_search_list:

@@ -134,3 +134,4 @@ Datasets/Validation/US/hashtag_joebiden.csv
 
 Twitter Scrape/data/*/*.csv
 Twitter Scrape/src/.DS_Store
+Datasets/Testing/*.csv
