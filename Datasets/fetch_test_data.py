@@ -5,14 +5,14 @@ from tqdm import tqdm
 
 data_source = "../Twitter Scrape/data/"
 output_path = "Testing/"
-categories = ["bjp"]
+categories = ["bjp","general","inc","bsp","samajwadi"]
 
 for category in tqdm(categories):
     path = data_source + category + "/"
     files = os.listdir(path)
     query_df_map = {}
     for file in files:
-        print(file)
+        #print(file)
         if file!=(".DS_Store"):
             query = file.split("2022")[0]
             if query[-1]=="_":
